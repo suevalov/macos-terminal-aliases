@@ -11,6 +11,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
+alias ll='ls -alF'
 ```
 
 #### Browsers ####
