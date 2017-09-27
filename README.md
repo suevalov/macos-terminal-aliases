@@ -61,8 +61,8 @@ function server() {
 #### Java ####
 ```bash
 
-# Java Version Changer
-alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d_\d\d" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
+# Java Version Changer - now updated for JDK 9
+alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "(jdk\d\.\d\.\d|jdk-\d\.)" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
 
 function java_use() {
     export JAVA_HOME=$(/usr/libexec/java_home -v $1)
@@ -171,4 +171,3 @@ function win7ff(){
 }
 
 ```
-
