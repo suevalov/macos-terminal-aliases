@@ -42,6 +42,7 @@ alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gcm='git commit -m'
 alias gamend='git commit -a --amend'
+alias gdeletemerged='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 ```
 
 #### Server ####
